@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css'/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         </div>
 
         <div class="info">
-            <div class="about">
+            <div class="about" data-aos="fade-up">
                 <h3 class="infotitle">about</h3>
                 <div class="line"></div>
                 <p class="aboutright">I am a graphic designer 🎨 with over 6 years
@@ -33,7 +34,7 @@
             </div>
 
             <div class="skills">
-                <h3 class="infotitle">skills</h3>
+                <h3 class="infotitle" data-aos="fade-up">skills</h3>
                 <div class="line"></div>
                 <ul class="softwarelist">
                     <li>
@@ -87,7 +88,7 @@
                 </ul>
             </div>
 
-            <div class="contact">
+            <div class="contact" data-aos="fade-up">
                 <h3 class="infotitle">contact</h3>
                 <div class="line"></div>
                 <ul class="contactlist">
@@ -108,6 +109,11 @@
         </div>
 
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 
