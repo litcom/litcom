@@ -1,0 +1,247 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*css reset*/
+
+body{
+    background: #C4C4C4;
+}
+
+.container{
+    max-width:1000px;
+    margin: 0px auto;
+}
+
+.topintro{
+    display: flex;
+    justify-content: center;
+}
+
+.leftimage{
+    min-width:20%;
+    padding:10%;
+}
+
+.righttext{
+    padding:10%;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    font-size: 4.5rem;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 5rem;
+    color: #fff;
+}
+
+.about, .contact, .skills{
+    display: flex;
+    margin-bottom: 3%;
+}
+
+.infotitle{
+    margin:auto;
+    min-width:150px;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.line{
+    background: #0049FF;
+    width: 1px;
+}
+
+.aboutright{
+    color:black;
+    font-family: 'Ubuntu Mono', monospace;
+    line-height: 2rem;
+    font-style: italic;
+    width:500px;
+    padding:4%;
+}
+
+.softwarelist{
+    font-family: 'Ubuntu Mono', monospace;
+    width:500px;
+    padding:4%;
+}
+
+.softwarelist li{
+    margin: 1rem;
+}
+
+.software{
+    display: inline;
+}
+
+.bubble{
+    background: #0049FF;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.bubble2{
+    background: #d2d2d2;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.contactlist{
+    font-family: 'Ubuntu Mono', monospace;
+    width:500px;
+    padding:4%;
+    line-height: 2rem;
+}
+
+.contactlist a{
+    text-decoration: none;
+    color:#fff;
+    transition: all 0.3s;
+    border-radius: 50px;
+}
+
+.contactlist a:hover{
+    background: #0049FF;
+}
+
+.contactlist li{
+    margin: 1rem;
+}
+
+.footer{
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+    padding:2%;
+    color: #000;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #000;
+  }
+  
+  ::selection {
+    color: #fff;
+    background: #000;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .leftimage{
+        max-width: 10%;
+        padding:0%;
+    }
+
+    .righttext{
+        font-size:3rem;
+        padding:5%;
+    }
+
+    .info{
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .topintro{
+        display: block;
+    }
+
+    .leftimage{
+        display:none;
+    }
+    
+    .righttext{
+        line-height: 3rem;
+        text-align: center;
+    }
+    
+    .info{
+        text-align: center;
+        margin: auto;
+    }
+
+    .infotitle{
+        padding-bottom:5%;
+        padding-top:10%;
+        border-bottom: 1px solid #fff;
+    }
+
+    .about, .skills, .contact{
+        display: block;
+    }
+
+    .aboutright{
+        width:100%;
+        padding:10% 0% 0% 0%;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    
+    .softwarelist{
+        width:100%;
+        padding:0%;
+    }
+
+    .software{
+        display:block;
+        padding-bottom: 2%;
+    }
+
+    .contactlist{
+        padding:0;
+        width:100%;
+    }
+
+    
+}
