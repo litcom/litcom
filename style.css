@@ -175,6 +175,10 @@ body{
 
   @media only screen and (max-width: 768px) {
 
+    .container{
+        max-width: 90%;
+    }
+
     .leftimage{
         max-width: 10%;
         padding:0%;
@@ -186,12 +190,15 @@ body{
     }
 
     .info{
-        max-width: 80%;
         margin: auto;
     }
 }
 
 @media only screen and (max-width: 425px) {
+
+    .container{
+        max-width: 80%;
+    }
 
     .topintro{
         display: block;
@@ -202,19 +209,21 @@ body{
     }
     
     .righttext{
+        font-size: 2.5rem;
         line-height: 3rem;
-        text-align: center;
+        text-align: left;
+        padding-left:0;
     }
     
     .info{
-        text-align: center;
-        margin: auto;
+        text-align: left;
     }
 
     .infotitle{
+        text-align: left;
         padding-bottom:5%;
-        padding-top:10%;
-        border-bottom: 1px solid #fff;
+        padding-top:5%;
+        border-bottom: 1px solid #0049FF;;
     }
 
     .about, .skills, .contact{
@@ -223,8 +232,9 @@ body{
 
     .aboutright{
         width:100%;
+        font-style: normal;
         padding:10% 0% 0% 0%;
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.5rem;
     }
     
@@ -242,6 +252,5 @@ body{
         padding:0;
         width:100%;
     }
-
     
 }
